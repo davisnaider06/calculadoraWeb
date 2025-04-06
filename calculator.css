@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* vh significa viewport height, que vai determinar o quanto % o body vai ocupar na tela*/
+    background-color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.calculadora{
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    /* ESSENCIAL PRA ORGANIZAR EM COLUNA */
+    display: flex;
+    flex-direction: column;
+}
+#display{
+  width: 100%;
+  padding: 20px;
+  font-size: 2rem;
+  text-align: right;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+}
+
+button{
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover{
+background-color: #555;
+}
+
+button:active{
+   transform: scale(0.80); 
+}
+
+.igual{
+    background-color: rgb(0, 170, 255);
+}
